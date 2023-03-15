@@ -1,0 +1,20 @@
+body.chakra-ui-light{
+  background-color: rebeccapurple;
+}
+.material-symbols-outlined{
+  color: chartreuse;
+
+}
+.blue{
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.customClass {
+  background-color: blue;
+  color: white;
+  font-size: 2rem;
+}

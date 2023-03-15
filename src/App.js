@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { ChakraProvider } from '@chakra-ui/react'
+import React from 'react'
+
+import CartWidget from './components/CartWidget';
+import './App.modules.css';
+import NavBar from './components/NavBar';
+// import ComponenteA from './components/ComponenteA';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Iniciamos react EMA escribiendo en el App.js en una etiqueta parrafo sin "errores al momento"
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider>
+
+    {/* <ComponenteA/> */}
+    <CartWidget/>
+    <NavBar/>
+    {/* <itemListContainer/> */}
+
+    </ChakraProvider>
   );
 }
 
