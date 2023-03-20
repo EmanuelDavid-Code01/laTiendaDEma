@@ -1,5 +1,5 @@
 import React from "react";
-import CartWidget from "./CartWidget";
+// import CartWidget from "./CartWidget";
 
 
 // import ComponenteA from "./ComponenteA";
@@ -9,9 +9,8 @@ import { Button, MenuButton, MenuList, MenuItem, Menu } from "@chakra-ui/react";
 const NavBar = () => {
   return (
     <div>
-      <CartWidget />
-      {/* <ComponenteA /> */}
-      <Button colorScheme="red">Button</Button>
+      
+      <Button colorScheme="red">Seleccion</Button>
       <Menu>
         <MenuButton as={Button}>Categorias</MenuButton>
         <MenuList>
@@ -25,5 +24,6 @@ const NavBar = () => {
     </div>
   );
 };
+
 
 export default NavBar;
