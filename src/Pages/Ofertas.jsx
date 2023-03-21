@@ -1,7 +1,7 @@
 
 const Ofertas = () => {
   return (
-    <div>Ofertas</div>
+    <div>Ofertas aca estan</div>
   )
 }
 
