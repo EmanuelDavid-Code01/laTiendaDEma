@@ -1,8 +1,3 @@
-import React from "react";
-// import CartWidget from "./CartWidget";
-
-
-// import ComponenteA from "./ComponenteA";
 
 import { Button, MenuButton, MenuList, MenuItem, Menu } from "@chakra-ui/react";
 
