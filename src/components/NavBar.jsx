@@ -24,10 +24,10 @@ const NavBar = () => {
       </Menu>
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+          <a className="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Link</a>
+          <a className="nav-link" href="/ofertas">Ofertas</a>
         </li>
         <li className="nav-item">
           <a className="nav-link disabled">Disabled</a>
