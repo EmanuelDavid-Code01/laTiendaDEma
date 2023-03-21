@@ -1,8 +1,9 @@
-
 const Ofertas = () => {
   return (
-    <div>Ofertas aca estan</div>
-  )
-}
+    <div>
+      <h1>esta es la pagina ofertas</h1>
+    </div>
+  );
+};
 
-export default Ofertas
+export default Ofertas;
