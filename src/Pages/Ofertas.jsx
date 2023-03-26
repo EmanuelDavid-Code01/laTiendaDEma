@@ -1,8 +1,11 @@
+import { ChakraProvider } from "@chakra-ui/react";
 const Ofertas = () => {
   return (
-    <div>
-      <h1>esta es la pagina ofertas</h1>
-    </div>
+    <ChakraProvider>
+      
+      
+
+    </ChakraProvider>
   );
 };
 

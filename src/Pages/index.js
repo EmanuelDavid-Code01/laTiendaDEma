@@ -1,2 +1,5 @@
 export *  from "Home"
 export * from "Ofertas"
+export * from "Cart"
+export * from "ProductDetails"
+export * from "Products"

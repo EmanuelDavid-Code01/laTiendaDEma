@@ -1,5 +1,4 @@
 
-import React from 'react'
 import {MainRouter} from"./Routes/MainRouter";
 
 function App() {
