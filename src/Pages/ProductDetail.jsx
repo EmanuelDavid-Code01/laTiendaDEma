@@ -1,7 +1,7 @@
 
 import {useParams} from "react-router-dom"
 import { ProductsData } from "../json";
-import { Products } from "./Products";
+
 
 
 export const ProductDetail = () => {
@@ -22,7 +22,7 @@ export const ProductDetail = () => {
              </Heading> 
       </Box> */}
           <img
-            src={Products.imagen} 
+            src={producto.imagen} 
             className="card-img-top"
             alt={producto.nombre}
           />
