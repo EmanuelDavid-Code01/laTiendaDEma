@@ -54,7 +54,7 @@ const NavBar = () => {
             h={8}
           >
             <Heading as="h4" size="md">
-              <Link href="/Cart">Productos</Link>
+              <Link href="/products">Productos</Link>
             </Heading>
           </Box>
 

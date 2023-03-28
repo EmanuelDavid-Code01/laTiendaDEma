@@ -1,34 +1,39 @@
-//en card tenemos que aplicar el link de lugar donde vamos a encontrar los productos
-import React from "react";
-import { ChakraProvider,Box } from "@chakra-ui/react";
-// import { Link } from "react-router-dom";
-
-export const Card = ({ nombre, descripcion, id }) => {
-  return (
-    <ChakraProvider>
-        <div className="card">
-      <Box>
-              {/* <Heading as="h4" size="md">
-              <Link to ={"/products/${producto.id}"}> nuestro producto</Link>
-             </Heading> */}
-      </Box>
-          <img
-            src="src={producto.imagen} "
-            className="card-img-top"
-            alt="{producto.nombre}"
-          />
-          <div className="card-body">
-            <h5 className="card-title">{nombre}</h5>
-            <p className="card-text">{descripcion}</p>
-            <a href="/products" class="btn btn-primary">
-              {id}
-            </a>
-          </div>
-        </div>
-    </ChakraProvider>
-  );
-};
-
 
   /* Y mostramos los datos que vienen por parametro
   export const Cards =                ( DE ESTA FORMA)  */
+  import { useNavigate } from "react-router-dom";
+  export const Card = ({ producto }) => {
+    const navigate = useNavigate();
+  
+    const handleNavigateProduct = () => {
+      navigate(`/products/${producto.id}`)
+    }
+    const handleGoBack = () => {
+      navigate(-1)
+    }
+    return (
+      <div className="card">
+        {/* <Link to={`/products/${producto.id}`} className="card-link">
+       
+          </Link> */}
+          <img
+            src={producto.imagen}
+            alt={producto.nombre}
+            className="card-img-top"
+          />
+        <div className="card-body">
+          <h5 className="card-title">{producto.nombre}</h5>
+          <p className="card-text">{producto.descripcion}</p>
+        </div>
+        <div className="card-footer">
+          <button className="btn btn-primary">Agregar al carrito</button>
+          <span className="precio">${producto.precio}</span>
+        </div>
+        <button onClick={handleNavigateProduct}>Ir a detalles</button>
+        <button onClick={handleGoBack}>Volver atras</button>
+  
+        
+      </div>
+    );
+  };
+  

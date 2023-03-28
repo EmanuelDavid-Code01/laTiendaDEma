@@ -1,20 +1,19 @@
 import React from "react";
 import {ProductsData} from "../json/products";
 import {Card} from "../components/Card";
-import { ProductDetail } from "./ProductDetail";
-import { ChakraProvider } from "@chakra-ui/react";
+
 
 export const Products = () => {
 
   return (
-    <ChakraProvider>
+    
     <div className="productos">
     {ProductsData.map((producto)=>(
       <Card Key={producto.id} producto = {producto}/>
       ))}
     </div>
-  <ProductDetail/>
-  </ChakraProvider>
+  
+  
   );
 };
 // este return toma la VARIABLE definida como ProductsData de products.js (ya definida)

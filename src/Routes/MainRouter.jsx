@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Ofertas from "../Pages/Ofertas";
 import Home from "../Pages/Home";
-import Cart from "../Pages/Cart";
+
 import NavBar from "../components/NavBar";
 import { ProductDetail } from "../Pages/ProductDetail";
 import { Products } from "../Pages/Products";
@@ -16,9 +16,8 @@ export const MainRouter = () => {
 
         <Route exact path="/" element={<Home />} />
         <Route exact path="/ofertas" element={<Ofertas />} />
-        <Route exact path="/Cart" element={<Cart />} />
-        <Route exact path="products" element={<Products/>} /> 
-        <Route exact path="/products/:producto.id" element={<ProductDetail />} />        
+        <Route exact path="/products" element={<Products/>} /> 
+        <Route exact path= "/products/:productId" element={<ProductDetail />} />        
        
 
       </Routes>
